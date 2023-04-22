@@ -11,6 +11,21 @@
   </welcome-file-list>
   
   <servlet>
+  	<display-name>Feedback Page</display-name>
+	<servlet-name>FeedbackServlet</servlet-name>
+	<servlet-class>com.algokelvin.servletlifecycle.FeedbackServlet</servlet-class>
+	<init-param>
+		<description>Organization Email</description>
+		<param-name>company-email</param-name>
+		<param-value>algokelvin@gmail.com</param-value>
+	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FeedbackServlet</servlet-name>
+  	<url-pattern>/feedbackServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
 	  <servlet-name>HttpServletLifecycle</servlet-name>
 	  <servlet-class>com.algokelvin.servletlifecycle.HttpServletLifecycle</servlet-class>
   </servlet>
