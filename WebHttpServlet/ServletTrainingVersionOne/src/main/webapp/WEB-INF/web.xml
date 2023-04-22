@@ -11,20 +11,36 @@
   </welcome-file-list>
   
   <servlet>
+	  <servlet-name>FirstGenericServlet</servlet-name>
+	  <servlet-class>com.algokelvin.webservlet.FirstGenericServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FirstGenericServlet</servlet-name>
+  	<url-pattern>/myPageGeneric</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>FirstHttpServlet</servlet-name>
+	  <servlet-class>com.algokelvin.webservlet.FirstHttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FirstHttpServlet</servlet-name>
+  	<url-pattern>/myPageHttp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
 	  <servlet-name>FirstServlet</servlet-name>
 	  <servlet-class>com.algokelvin.webservlet.FirstServlet</servlet-class>
   </servlet>
-  
-  <servlet>
-	  <servlet-name>HomeServlet</servlet-name>
-	  <servlet-class>com.algokelvin.webservlet.HomeServlet</servlet-class>
-  </servlet>
-  
   <servlet-mapping>
   	<servlet-name>FirstServlet</servlet-name>
   	<url-pattern>/myPage</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+	  <servlet-name>HomeServlet</servlet-name>
+	  <servlet-class>com.algokelvin.webservlet.HomeServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>HomeServlet</servlet-name>
   	<url-pattern>/home</url-pattern>
