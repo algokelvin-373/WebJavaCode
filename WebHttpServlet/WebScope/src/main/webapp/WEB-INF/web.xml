@@ -29,4 +29,24 @@
   	<url-pattern>/web-scope</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<display-name>ContextSQLDatabase Page</display-name>
+	<servlet-name>ContextSQLDatabaseTraining</servlet-name>
+	<servlet-class>com.algokelvin.webscope.ContextSQLDatabaseTraining</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextSQLDatabaseTraining</servlet-name>
+  	<url-pattern>/web-scope-db</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<display-name>ContextParamSQL Page</display-name>
+	<servlet-name>ContextParamSQL</servlet-name>
+	<servlet-class>com.algokelvin.webscope.ContextParamSQL</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextParamSQL</servlet-name>
+  	<url-pattern>/web-scope-db2</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
